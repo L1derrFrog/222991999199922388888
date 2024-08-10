@@ -1,0 +1,21 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+repositories {
+	mavenCentral()
+}
+
+mainClassName = "ClassMain"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	compile 'org.springframework:spring-context:4.2.1.RELEASE'
+}
